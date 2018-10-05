@@ -1,0 +1,228 @@
+/* Big tablet to 1200px (widths smaller taht the 1140px row) */
+
+@media only screen and (max-width: 1200px) {
+    .banner-text {
+        display: hidden;
+        width: 100%;
+        padding: 0 2%;
+    }
+    .row {
+        padding: 0 2%;
+    }
+    .section-about {
+        margin-top: -100px;
+    }
+    .our-flag {
+        margin-left: 5px;
+    }
+    .section-year-book h3 {
+        font-size: 14px;
+    }
+}
+
+/* Small tablet to big tablet: from 768px to 1023px */
+
+@media only screen and (max-width: 1023px) {
+    body {
+        font-size: 25px;
+    }
+    section {
+        padding: 60px 0;
+    }
+    .first-description {
+        width: 80%;
+        margin-left: 10%;
+    }
+    .icon-small {
+        width: 17px;
+        margin-right: 5px;
+    }
+    .section-about {
+        margin-top: -40px;
+    }
+    .section-about {
+        margin-top: -250px;
+    }
+    .nav-bar {
+        display: none;
+    }
+    .section-year-book h3 {
+        font-size: 14px;
+    }
+    .section-year-book branch-logo {
+        /*??? */
+        background: blue;
+    }
+    .section-testimonials {
+        height: 130vh;
+        font-size: 25px;
+    }
+    .section-us-flag {
+        display: none;
+    }
+}
+
+/* Small phones to small tablets: from 481px to 767px */
+
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 16px;
+    }
+    section {
+        padding: 30px 0;
+    }
+    h1 {
+        font-size: 180%;
+    }
+    h2 {
+        font-size: 150%;
+    }
+    .row, .banner-text {
+        padding: 0 4%;
+    }
+    .col {
+        width: 100%;
+        margin: 0 0 4% 0;
+    }
+    .nav-bar {
+        display: none;
+    }
+    .description {
+        width: 100%;
+        margin-left: 0%;
+    }
+    .section-about {
+        margin-top: -15px;
+    }
+    .section-about {
+        margin-top: -40px;
+    }
+    .section-us-flag {
+        display: none;
+    }
+    .section-about {
+        margin-top: -40px;
+    }
+    .section-about {
+        margin-top: -350px;
+        font-size: 25px;
+    }
+    .modal {
+        font-size: 25px;
+    }
+    .section-thanks-to {
+        font-size: 25px;
+    }
+    .section-thanks-to h2 {
+        margin-bottom: 55px;
+    }
+    .vit-logo-fix {
+        margin-bottom: 5px;
+    }
+    .DK-logo-fix {
+        padding-top: 55px;
+    }
+    .yearbook-box {
+        max-width: 50%;
+    }
+    .branch-logo {
+        margin-bottom: 10px;
+    }
+    .section-faculty .student-name {
+        margin-bottom: 35px;
+        margin: 40px;
+        font-size: 25px;
+    }
+    .section-faculty {
+        font-size: 35px;
+        margin: 0 auto
+    }
+    .section-testimonials {
+        height: 180vh;
+        font-size: 505px;
+    }
+    .graduation-hat-icon {
+        display: none;
+    }
+    .section-year-book h2 {
+        margin-bottom: 200px;
+    }
+    .section-carousel .description {
+        font-size: 25px;
+    }
+    .section-us-flag {
+        display: none;
+    }
+    .section-testimonials {
+        height: 300vh;
+        font-size: 20px;
+    }
+}
+
+/* Small phones: from 0 to 480px */
+
+@media only screen and (max-width: 480px) {
+    header {
+        margin-bottom: -550px
+    }
+    section {
+        padding: 25px 0;
+        font-size: 125%
+    }
+    .logo {
+        display: none;
+    }
+    .section-about {
+        margin-top: -40px;
+    }
+    .section-thanks-to {
+        margin-bottom: 85px;
+    }
+    .section-thanks-to h2 {
+        font-size: 130%;
+        margin-bottom: 80px;
+    }
+    .section-thanks-to h3 {
+        margin-top: -40px;
+        margin-bottom: 80px
+    }
+    .vit-logo-fix {
+        margin-bottom: 50px;
+    }
+    .GA-logo-fix {
+        margin-bottom: 25px;
+    }
+    .DK-logo-fix {
+        margin-bottom: 50px;
+        padding-top: 10px
+    }
+    .DK-logo-container {
+        margin-bottom: -50px;
+    }
+    .yearbook-box {
+        margin-bottom: 90px;
+    }
+    .section-year-book {
+        margin-bottom: -150px;
+    }
+    .section-faculty {
+        margin-top: -130px;
+    }
+    .section-testimonials {
+        height: 180vh;
+    }
+    .section-flag {
+        height: 50vh;
+    }
+    .section-faculty .yearbook-picture:first-child {
+        margin: -90px 0 50px 0;
+    }
+    .section-faculty h3 {
+        margin-top: -55px;
+    }
+    .section-us-flag {
+        display: none;
+    }
+}
+
+/*----------------------------------------------------*/

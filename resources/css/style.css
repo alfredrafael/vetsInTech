@@ -1,0 +1,785 @@
+/* ----------------------------------------------- */
+
+/* BASIC SETUP */
+
+/* ----------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: #fff;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/* ----------------------------------------------- */
+
+/* main tags */
+
+/* ----------------------------------------------- */
+
+h1, h2, h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+h1 span {
+    text-transform: lowercase;
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    color: #6f1ba1;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #6f1ba1;
+    content: " ";
+    width: 100px;
+    /*Centralizes the line by saying "0 UP&DOWN and "auto" for LEFT&RIGHT */
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+header {
+    color: white;
+    height: 100vh;
+    /*The following background was replaced by the video*/
+    /*  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/05.jpg); */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin-bottom: -10px;
+}
+
+section {
+    padding: 10px 0;
+}
+
+footer {
+    background-color: #333;
+    padding: 50px;
+    font-size: 80%;
+}
+
+/* ----- grid & icon related ----- */
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.box {
+    padding: 1%;
+    text-align: center;
+}
+
+.box img {
+    width: 40%;
+    height: auto;
+    margin-top: -85px;
+}
+
+.GA-logo-fix {
+    padding: 1px;
+    min-width: 70%;
+    margin: -20px;
+}
+
+.DK-logo-fix {
+    min-width: 55%;
+}
+
+.margin-between-sections-fix {
+    margin-bottom: 30px;
+}
+
+.break-fix {
+    display: block;
+}
+
+.class-logo-fix {
+    padding: 90px 30px 10px 30px;
+    width: 25%;
+    display: block
+}
+
+.fa-graduation-cap {}
+
+.description {
+    line-height: 145%;
+    width: 70%;
+    margin: 0 auto;
+    /*Fixing margin left*/
+    text-align: center;
+}
+
+.paragraph-links:link, .paragraph-links:visited {
+    text-decoration: none;
+}
+
+.paragraph-links:hover, .paragraph-links:active {
+    border-bottom: 1px solid #7b3da7;
+}
+
+.whole-group-picture-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.whole-group-picture {
+    text-align: center;
+    width: 80%;
+    height: 20%;
+}
+
+.graduation-hat-icon {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    font-size: 80%;
+    margin-right: 10px;
+    /*to align text and icons*/
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -15px;
+}
+
+/* ----- LINKS ----- */
+
+a:link, a:visited {
+    border-bottom: 1px solid transparent;
+}
+
+a:hover, a:active {
+    border-bottom: 5px solid #7b3da7
+}
+
+/* ----- BUTTONS ----- */
+
+.btn:link, .btn:visited {
+    margin-right: 15px;
+    font-weight: 300;
+    text-decoration: none;
+    border: 1px solid rgb(218, 208, 208);
+    color: white;
+    padding: 10px 30px;
+    border-radius: 15px;
+}
+
+.btn-full {
+    background-color: #471167;
+}
+
+.btn-full:hover, .btn-full:active {
+    background: #651893;
+}
+
+.btn-ghost:hover, .btn-ghost:active {
+    background: #651893;
+}
+
+/* ----------------------------------------------- */
+
+/* HEADER */
+
+/* ----------------------------------------------- */
+
+.banner-text {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+/* Nav-Bar */
+
+.nav-bar {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+    margin-right: -50px;
+}
+
+.nav-bar li {
+    display: inline-block;
+    margin-left: 40px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-bar li a:link, .nav-bar li a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-bar li a:hover, .nav-bar li a:active {}
+
+/* ----------------------------------------------- */
+
+/* SECTIONS                                        */
+
+/* ----------------------------------------------- */
+
+.section-about {
+    margin-top: 80px;
+}
+
+.--js-fade-in-animation-1, .--js-fade-in-animation-2, .--js-fade-in-animation-3 {
+    opacity: 0;
+    animation-duration: 1s;
+}
+
+.section-showcase {
+    padding: 0;
+}
+
+.photos-showcase {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+}
+
+.photos-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.single-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+.single-photo img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.single-photo img:hover {
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+.section-thanks-to {
+    background: linear-gradient(rgb(255, 247, 248), rgb(231, 192, 199));
+}
+
+.section-year-book {
+    padding: 0 0 50px 0;
+}
+
+.section-faculty {
+    background: linear-gradient(rgb(255, 247, 248), rgb(231, 192, 199));
+}
+
+.section-faculty h2 {
+    margin: 0 0 50px 0;
+}
+
+.yearbook-picture {
+    padding: 0;
+}
+
+.yearbook-box {
+    /*box with student picture, student name, logo of military branch, etc...*/
+    padding: 1%;
+}
+
+.yearbook-box img {
+    /*student picture*/
+    width: 100%;
+    height: auto;
+    /*Allow my pictures not to be too far from the title of this section*/
+    margin-top: -85px;
+}
+
+.branch-logo {
+    /*Student name*/
+    margin-bottom: 5px;
+    /*separates the branch-logo from the next row below*/
+    line-height: 10%;
+    /*align text with icons*/
+    vertical-align: middle;
+    float: left;
+}
+
+.branch-logo img {
+    /*military branch logo*/
+    width: 50px;
+    margin-top: 5px;
+    margin-right: 30px;
+}
+
+.student-name {
+    display: inline-block;
+    /*tells the program to make the name appear SIDE-to-SIDE with the previous element...*/
+    vertical-align: middle;
+    margin-left: -25px;
+}
+
+.more-info {
+    font-size: 10px;
+    display: inline-block;
+}
+
+.testing {
+    display: inline-block;
+}
+
+.make-lowercase {
+    text-transform: lowercase;
+}
+
+.yearbook-box h3, .section-faculty h3 {
+    font-size: 80%;
+    font-weight: bold;
+}
+
+/* ----------------------------------------------- */
+
+/* Video trick */
+
+/* ----------------------------------------------- */
+
+.video-container {
+    position: relative
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+}
+
+.video-container .over-the-video {
+    position: absolute;
+    background: rgba(28, 31, 39, 0.7);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.over-the-video {
+    width: 100%;
+    height: auto;
+    position: absolute;
+}
+
+/* ----------------------------------------------- */
+
+/* HOVER ON STUDENTS trick                         */
+
+/* ----------------------------------------------- */
+
+.div-with-pic-and-legend {
+    text-align: center;
+}
+
+.yearbook-picture {
+    /*I am "repeating myself here" (there is another class with the same name before) but this is the "class-in-pic" for this effect*/
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.div-with-legend {
+    transition: .5s ease;
+    opacity: 0;
+    text-align: center;
+}
+
+.div-with-pic-and-legend:hover .yearbook-picture {
+    opacity: 0.3;
+}
+
+.div-with-pic-and-legend:hover .div-with-legend {
+    opacity: 1;
+}
+
+#legend {
+    background-color: purple;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+/* ----------------------------------------------- */
+
+/* TESTIMONIALS */
+
+/* ----------------------------------------------- */
+
+.section-testimonials {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/group-from-back.jpg);
+    /* background-image: linear-gradient(rgba(255, 247, 248, .5), rgba(231, 192, 199, .5)), url(../img/group-from-back.jpg); */
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+    height: 95vh;
+}
+
+.section-testimonials h2 {
+    color: white;
+}
+
+blockquote {
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+}
+
+blockquote:before {
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+
+cite {
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
+
+cite img {
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.section-black-logo {
+    display: block;
+    text-align: center;
+    height: 20vh;
+    /*  background: red; */
+}
+
+.black-logo-container {
+    height: 10vh;
+    /*the next to CENTRALIZE*/
+    margin: 0 auto;
+}
+
+.logo-black {
+    max-width: 10%;
+}
+
+/* ----------------------------------------------- */
+
+/* MODAL */
+
+/* ----------------------------------------------- */
+
+.modal {
+    /*Make it hidden by default*/
+    display: none;
+    /*Provide color for modal's background (inside)*/
+    background-color: #dbd9d9;
+    /*Determine modal's size, border and padding*/
+    width: 700px;
+    height: 550px;
+    padding: 20px 35px;
+    border-radius: 5px;
+    /*Make it float "on top" of everything else*/
+    z-index: 10;
+    /*Determine the modal's overlay (outside's background) color*/
+    box-shadow: 0 0 0 99999px rgba(0, 0, 0, 0.7);
+    /*establish the position of the modal on the screen*/
+    position: fixed;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%);
+}
+
+.modal p {
+    font-family: 'Stardos Stencil', cursive;
+}
+
+.close-modal {
+    color: #000;
+    text-decoration: none;
+    float: right;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 200%
+}
+
+.modal-picture-container {
+    float: left;
+}
+
+.modal-student-branch {
+    padding: 0px;
+    margin-top: -20px;
+}
+
+.modal-branch-logo {
+    max-width: 70px;
+    margin-bottom: -25px;
+    margin-left: 5px;
+}
+
+.modal-picture {
+    max-width: 200px;
+    float: left;
+    margin-right: 20px;
+}
+
+.modal-student-data {
+    line-height: 150%;
+}
+
+/* ----------------------------------------------- */
+
+/* Section carousel */
+
+/* ----------------------------------------------- */
+
+.section-carousel {
+    margin: 5px auto;
+    /*background: linear-gradient(rgb(231, 192, 199), rgb(255, 247, 248));*/
+}
+
+.section-carousel img {
+    max-width: 100%;
+    padding: 5%;
+}
+
+.slick-slide img {
+    min-width: 100%;
+    margin: 0 50px;
+}
+
+/* Defines the width of the carousel and centers it on the page */
+
+.slick-carousel {
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* The width of each slide */
+
+.slick-slide {
+    width: 100%;
+}
+
+/* Color of the arrows */
+
+.slick-next::before, .slick-prev::before {
+    color: purple !important;
+}
+
+/*
+.slick-dots li button:before {
+    color: orange;
+    font-size: 10px;
+}*/
+
+/*Control the color and size of the dots */
+
+.slick-dots li.slick-active button:before {
+    color: purple !important;
+    font-size: 10px;
+}
+
+/* ----------------------------------------------- */
+
+/* Section US Flag */
+
+/* ----------------------------------------------- */
+
+.section-us-flag {
+    background: linear-gradient(rgba(150, 65, 150, .9), black);
+    height: 45vh;
+}
+
+.last-logos {
+    margin-top: 0px;
+}
+
+.section-proud-to-serve h2 {
+    color: white;
+    margin-bottom: 50px;
+}
+
+.proud-to-serve-logo {
+    min-width: 70%;
+    margin-left: 75px;
+}
+
+.our-flag {
+    max-width: 80%;
+    float: left;
+    margin-left: -50px;
+    margin-top: 15px;
+}
+
+.our-logo-at-the-end-fix {
+    max-width: 35%;
+    float: right;
+    margin-top: 15px;
+}
+
+/* ----------------------------------------------- */
+
+/* FOOTER */
+
+/* ----------------------------------------------- */
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.footer-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li, .footer-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child, .footer-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-nav li a:link, .footer-nav li a:visited, .footer-links li a:link, .footer-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover, .footer-nav li a:active {
+    color: #ddd;
+}
+
+.footer-links li a:link, .fotter-links li a:visited {
+    font-size: 160%;
+}
+
+.ion-social-facebook, .ion-social-twitter, .ion-social-googleplus, .ion-social-instagram {
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.ion-social-facebook:hover {
+    color: #3b5998;
+}
+
+.ion-social-twitter:hover {
+    color: #00aced;
+}
+
+.ion-social-googleplus:hover {
+    color: #dd4b39;
+}
+
+.ion-social-instagram:hover {
+    color: #517fa4;
+}
+
+footer p {
+    color: #888;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer a {
+    color: rgb(194, 172, 172);
+}
+
+.modal-GA {
+    /*Student name*/
+    margin-bottom: 5px;
+    /*separates the branch-logo from the next row below*/
+    line-height: 10%;
+    /*align text with icons*/
+    vertical-align: middle;
+    float: left;
+}
+
+.teacher-name {
+    display: inline;
+    /*tells the program to make the name appear SIDE-to-SIDE with the previous element...*/
+    vertical-align: middle;
+    margin-left: -25px;
+}
+
+.modal-GA {
+    display: inline;
+    max-width: 150px;
+    margin-bottom: -25px;
+    margin-left: 5px;
+}
+
+.modal-branch-GA-logo {
+    max-width: 150px;
+    margin-bottom: -25px;
+    margin-left: 5px;
+}
